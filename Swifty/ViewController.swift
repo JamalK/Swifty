@@ -15,12 +15,10 @@ import QuartzCore
 
 class ViewController: UIViewController {
     
-    //Outlets for text fields.
+    //Outlets for UI Elements.
     @IBOutlet var usernameField:   UITextField
     @IBOutlet var imageView:       UIImageView
     @IBOutlet var passwordField:   UITextField
-    
-    //outlet for button.
     @IBOutlet var loginButton:     UIButton
     
     
