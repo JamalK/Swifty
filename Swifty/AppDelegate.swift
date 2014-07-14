@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Swifty
 //
-//  Created by iD Staff on 7/13/14.
-//  Copyright (c) 2014 Flowers Designs. All rights reserved.
+//  Created by Jamal Kharrat on 7/13/14.
+//  Copyright (c) 2014 Jamal Designs. All rights reserved.
 //
 
 import UIKit
@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
         // Override point for customization after application launch.
         return true
     }

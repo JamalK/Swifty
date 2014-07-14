@@ -10,8 +10,9 @@
 		A23CB3BA19730979000D8742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CB3B919730979000D8742 /* AppDelegate.swift */; };
 		A23CB3BC19730979000D8742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CB3BB19730979000D8742 /* ViewController.swift */; };
 		A23CB3BF19730979000D8742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23CB3BD19730979000D8742 /* Main.storyboard */; };
-		A23CB3C119730979000D8742 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23CB3C019730979000D8742 /* Images.xcassets */; };
 		A23CB3CD19730979000D8742 /* SwiftyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CB3CC19730979000D8742 /* SwiftyTests.swift */; };
+		A23CB3D919731AF3000D8742 /* ImageAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23CB3D819731AF3000D8742 /* ImageAsset.xcassets */; };
+		A23CB3DB19732348000D8742 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23CB3DA19732348000D8742 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +31,11 @@
 		A23CB3B919730979000D8742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A23CB3BB19730979000D8742 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A23CB3BE19730979000D8742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A23CB3C019730979000D8742 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A23CB3C619730979000D8742 /* SwiftyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23CB3CB19730979000D8742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A23CB3CC19730979000D8742 /* SwiftyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTests.swift; sourceTree = "<group>"; };
+		A23CB3D819731AF3000D8742 /* ImageAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAsset.xcassets; sourceTree = "<group>"; };
+		A23CB3DA19732348000D8742 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23CB3DB19732348000D8742 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +81,7 @@
 				A23CB3B919730979000D8742 /* AppDelegate.swift */,
 				A23CB3BB19730979000D8742 /* ViewController.swift */,
 				A23CB3BD19730979000D8742 /* Main.storyboard */,
-				A23CB3C019730979000D8742 /* Images.xcassets */,
+				A23CB3D819731AF3000D8742 /* ImageAsset.xcassets */,
 				A23CB3B719730979000D8742 /* Supporting Files */,
 			);
 			path = Swifty;
@@ -88,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A23CB3B819730979000D8742 /* Info.plist */,
+				A23CB3DA19732348000D8742 /* QuartzCore.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,8 +193,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23CB3D919731AF3000D8742 /* ImageAsset.xcassets in Resources */,
 				A23CB3BF19730979000D8742 /* Main.storyboard in Resources */,
-				A23CB3C119730979000D8742 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
