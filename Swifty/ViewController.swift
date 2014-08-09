@@ -15,19 +15,18 @@ import QuartzCore
 
 class ViewController: UIViewController {
     
-    //Outlets for UI Elements.
-    @IBOutlet var usernameField:   UITextField
-    @IBOutlet var imageView:       UIImageView
-    @IBOutlet var passwordField:   UITextField
-    @IBOutlet var loginButton:     UIButton
+    //MARK: Outlets for UI Elements.
+    @IBOutlet weak var usernameField:   UITextField!
+    @IBOutlet weak var imageView:       UIImageView!
+    @IBOutlet weak var passwordField:   UITextField!
+    @IBOutlet weak var loginButton:     UIButton!
     
     
-    //Changing Image Functionality.
-    var idx: Int = 0
-    let backGroundArray = [UIImage(named: "img1.jpg"),UIImage(named:"img2.jpg"), UIImage(named: "img3.jpg"), UIImage(named: "img4.jpg")]
-    
-    
-    
+    //MARK: Global Variables for Changing Image Functionality.
+    private var idx: Int = 0
+    private let backGroundArray = [UIImage(named: "img1.jpg"),UIImage(named:"img2.jpg"), UIImage(named: "img3.jpg"), UIImage(named: "img4.jpg")]
+
+    //MARK: View Controller LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,25 +61,23 @@ class ViewController: UIViewController {
     
     
     
-    func loginButton(enabled: Bool){
-        if enabled{
+    func loginButton(enabled: Bool) -> () {
+        func enable(){
             UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
                 self.loginButton.backgroundColor = UIColor.ColorWithHex(0x33CC00)
-                                            }, completion: nil)
+                }, completion: nil)
             loginButton.enabled = true
         }
-        else{
+        func disable(){
             loginButton.enabled = false
             UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
                 self.loginButton.backgroundColor = UIColor.ColorWithHex(0x333333)
-                                            }, completion: nil)
-            loginButton.enabled = true
+                }, completion: nil)
         }
-        
+        return enabled ? enable() : disable()
     }
     
     func changeImage(){
-        
         if idx == backGroundArray.count-1{
             idx = 0
         }
@@ -123,12 +120,7 @@ class ViewController: UIViewController {
     }
     
     
-    
-    
-    
-    
 }
-
 
 //Extension for Color to take Hex Values
 extension UIColor{
@@ -142,5 +134,8 @@ extension UIColor{
         return color
     }
 }
+
+
+
 
 

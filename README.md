@@ -1,6 +1,8 @@
 # Swifty Login
 Just a beautiful login, coded in Swift with Background changing every few seconds with animation.
 
+![Screenshot](screenshot.png)
+
 ### License
 MIT
 Images belong to their respective owners under CC License

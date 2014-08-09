@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="bIr-7f-ihy">
@@ -124,8 +124,8 @@
                     <connections>
                         <outlet property="imageView" destination="bIr-7f-ihy" id="cua-Xn-ubp"/>
                         <outlet property="loginButton" destination="jVY-nr-tC4" id="bkj-fs-0yg"/>
-                        <outlet property="passwordField" destination="nbf-yo-0au" id="546-XA-lz7"/>
-                        <outlet property="usernameField" destination="efr-cK-7YM" id="3BL-f2-3At"/>
+                        <outlet property="passwordField" destination="nbf-yo-0au" id="Ops-ef-TMd"/>
+                        <outlet property="usernameField" destination="efr-cK-7YM" id="wcd-Lg-Laz"/>
                         <segue destination="bx5-Wm-7z7" kind="showDetail" identifier="login" id="EAb-91-L5m"/>
                     </connections>
                 </viewController>
@@ -147,7 +147,7 @@
                         <viewControllerLayoutGuide type="bottom" id="y4x-y7-0Kw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nWX-Xk-CGE">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

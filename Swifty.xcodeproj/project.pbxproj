@@ -399,6 +399,7 @@
 				A23CB3D219730979000D8742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A23CB3D319730979000D8742 /* Build configuration list for PBXNativeTarget "SwiftyTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +408,7 @@
 				A23CB3D519730979000D8742 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
