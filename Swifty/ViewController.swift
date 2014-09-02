@@ -64,14 +64,14 @@ class ViewController: UIViewController {
     func loginButton(enabled: Bool) -> () {
         func enable(){
             UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-                self.loginButton.backgroundColor = UIColor.ColorWithHex(0x33CC00)
+                self.loginButton.backgroundColor = UIColor.colorWithHex("#33CC00", alpha: 1)
                 }, completion: nil)
             loginButton.enabled = true
         }
         func disable(){
             loginButton.enabled = false
             UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
-                self.loginButton.backgroundColor = UIColor.ColorWithHex(0x333333)
+                self.loginButton.backgroundColor = UIColor.colorWithHex("#333333",alpha :1)
                 }, completion: nil)
         }
         return enabled ? enable() : disable()
@@ -125,14 +125,22 @@ class ViewController: UIViewController {
 //Extension for Color to take Hex Values
 extension UIColor{
     
-    class func ColorWithHex (hex : Int) -> UIColor
-    {
-        let red = Double((hex & 0xFF0000) >> 16) / 255.0
-        let green = Double((hex & 0xFF00) >> 8) / 255.0
-        let blue = Double((hex & 0xFF)) / 255.0
-        var color: UIColor = UIColor( red: CGFloat(red), green: CGFloat(green), blue: CGFloat(blue), alpha:CGFloat(1) )
-        return color
+    class func colorWithHex(hex: String, alpha: CGFloat = 1.0) -> UIColor {
+    var rgb: CUnsignedInt = 0;
+    let scanner = NSScanner(string: hex)
+
+    if hex.hasPrefix("#") {
+        // skip '#' character
+        scanner.scanLocation = 1
     }
+    scanner.scanHexInt(&rgb)
+
+    let r = CGFloat((rgb & 0xFF0000) >> 16) / 255.0
+    let g = CGFloat((rgb & 0xFF00) >> 8) / 255.0
+    let b = CGFloat(rgb & 0xFF) / 255.0
+
+    return UIColor(red: r, green: g, blue: b, alpha: alpha)
+}
 }
 
 
